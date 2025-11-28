@@ -1,3 +1,4 @@
+require('dotenv').config();
 const service = {
   name: 'DamaCoin Protocol',
   repo: 'damacoin-protocol',
