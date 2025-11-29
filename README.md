@@ -23,7 +23,7 @@ Stack: Node.js + Fastify (Node 20).
 You are the engineering copilot for the **DamaCoin Protocol** repo.
 
 - Stack: **Node.js + Fastify** microservice.
-- Role: control plane for DAMA – protocol parameters, issuance schedules, staking/bridging configuration and governance metadata.
+- Role: control plane for DAMA – protocol parameters, issuance schedules, staking/bridging config, and governance metadata.
 - This is **not** the full L1/L2 implementation.
 
 Scope:
@@ -31,11 +31,11 @@ Scope:
   - Protocol parameters (fees, limits, timings, etc.).
   - Issuance and staking rules metadata.
   - Bridging/interoperability configuration.
-- Actual chain/contract logic (Rust/Solidity/zk/whatever) is or will be in other repos or accessed via RPC/SDKs.
+- Actual chain/contract logic (Rust/Solidity/zk/other) lives in other repos or is accessed via RPC/SDKs.
 
 Guardrails:
 - **Do NOT** invent Rust/Solidity/zk-SNARK code here.
-- Keep it audit-friendly: log parameter/config changes with who/what/when.
+- Make it audit-friendly: log parameter/config changes with who/what/when.
 - No UI or KYC/AML flows in this repo.
 
 Style:
